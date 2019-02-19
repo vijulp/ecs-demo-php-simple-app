@@ -1,0 +1,21 @@
+{
+  "taskDefinition": {
+    "family": "hello-world",
+    "containerDefinitions": [
+      {
+        "name": "vp-sample",
+        "images": "280575383874.dkr.ecr.ca-central-1.amazonaws.com/vp-sample:latest",
+        "cpu": 100,
+        "portMappings": [
+          {
+            "protocol": "tcp",
+            "containerPort": 80,
+            "hostPort": 80
+          }
+        ],
+        "memory": 128,
+        "essential": true
+      }
+    ]
+  }
+}
